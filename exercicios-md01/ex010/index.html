@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Trabalhando com links
+    </title>
+</head>
+<body>
+    <h1>Usando link externos:</h1>
+    <hr>
+    <dl>
+        <dt><strong>Link Externo??</strong></dt>
+        <dd>É um link que <ins><big>APONTA</big></ins> para outro site.</dd> <br>
+    </dl>
+    <P>* Exemplo que será usado vai ser com o repositório do <q>Gustavo Guanabara</q> o <em>GitHub</em> <br>
+    <code><a href="https://gustavoguanabara.github.io/">repositório!!</a></code>
+    </P> 
+    <p>* Outro Exemplo de link, seria para o canal do <em>YouTube</em>, do <q>Gustavo Guanabara.</q>
+    <br> <code><a href="https://youtube.com/cursoemvideo/">Link para o Canal!</a></code> <br>
+    </p>
+    <p>
+        &rarr; Vale ressaltar, que utilizando essa forma de link, possivelmente o cliente não retornará mais o site de origem. <br>
+        Para isso adicionamos: <pre><em>target="_blank" rel="external"</em></pre> <br>
+        <strong>Por Exemplo:</strong> <br>
+        <code><a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório</a></code> <br>
+        <code><a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external"> YouTube</a></code>
+    </p>
+    <h1>Usando Links Internos</h1>
+    <dl>O que seria um link Interno?
+        <dt>Link Interno??</dt>
+        <dd>É o que irá fazer a relação com outra página, que está dentro do nosso servidor que diz respeito a nossa própria página.</dd>
+    </dl>
+    <p>Ésta é a primeira página desse <ins>SITE</ins>. Se você quiser, pode acessar também a minha segunda página: <br>
+        <a href="pag002.html" rel="next">Segunda Página</a>
+    </p>
+    Você também pode acessar nossa: <code><a href="Notícias/pag003.html" rel="next"><br>página de notícias!</a></code>
+    <h1>Links para Download</h1>
+    <p>Downloads:</p>
+    <ul>
+        <li><a href="Livro/10 - LTP-compactado.pdf" download="meulivro.pdf" type="application/pdf">Baixe aqui.</a></li>
+    </ul>
+    Se o Download não funcionar, basta abrir e baixar.
+</body>
+</html>

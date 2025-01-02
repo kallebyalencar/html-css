@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p><q><strong>Abra esse site em <em>vários dispositivos diferentes</em>, ou simplesmente <mark> aumente</mark> e <mark style="background-color: darkred;"> diminua </mark> o <ins>tamanho</ins> do seu navegador.</strong></q></p>
+    <h2>Veja a mágica acontecer:</h2>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Reprodução Áudios</h1>
+    <p>Sim, podemos reproduzir áudios usando <abbr title="Hypertext Markup Language"><strong><code>HTML5</code></strong></abbr> <br> <br>
+       <strong>Exemplo 1: <ins>Forma Simples</ins></strong>
+    </p>
+    <audio src="midia/stasis-tracktribe.mp3" controls autoplay></audio> <!--MP3, WAV, OGG--> <br>
+<blockquote>
+    <code>
+    &lt;audio src="midia/stasis-tracktribe.mp3" controls autoplay&gt;
+    &lt;/audio&gt;
+    </code>
+</blockquote>
+<p><strong>Exemplo 2: <ins>Podcast Áudio</ins></strong></p>
+     <audio preload="metadata" autoplay controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.mp3" type="audio/ogg">
+        <source src="midia/guanacast-33.mp3" type="audio/wav">
+        <p><code>Infelizmente seu navegador não consegue reproduzir áudio.</code> <a href="midia/guanacast-33.mp3" target="_blank" rel="external">Clique aqui para baixar o arquivo MP3</a></p>
+</body>
+</html>
