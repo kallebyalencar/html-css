@@ -3,4 +3,4 @@
 
  Estou aprendendo a criar sites e a gerenciar meus repositórios!
 
-<a href="https://kallebyalencar.github.io/html-css/desafios/desafio10/android.html"> Executar o Desafio 10</a>
+<a href="https://kallebyalencar.github.io/html-css/desafios/desafio10/index.html"> Executar o Desafio 10</a>
