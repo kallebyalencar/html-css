@@ -29,7 +29,7 @@
 
 
 body {
-    background-color: var(--cor0);
+    background-image: url('imagens/dan-droids.png');
     font-family: var(--font-padrao);
 }
 
