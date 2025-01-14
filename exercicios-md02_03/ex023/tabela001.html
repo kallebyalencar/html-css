@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+        }
+
+        section {
+            margin: auto;
+        }
+
+        #container {
+            position: relative;
+            background-size: 100% 100%;
+            height: 96vh;
+        }
+
+        #conteudo {
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%,-50%);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100px;
+            border-collapse: separate;
+            transition-duration: 1s;
+            border: 5px solid red;
+        }
+
+        table:hover {
+            width: 300px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 7px;
+        }
+
+        td > p {
+            display: none;
+        }
+
+        td:hover > p {
+            display: block;
+            width: 10px;
+            height: 10px;
+            transition-duration: 1s;
+        }
+        
+        td.dado1:hover {
+            background-color: darkmagenta;
+            color: black;
+        }
+
+        td.dado2:hover {
+            background-color: yellow;
+            color: black;
+        }
+
+        td.dado3:hover {
+            background-color: rgb(241, 69, 98);
+            color: black;
+        }
+
+        td.dado4:hover {
+            background-color: darkred;
+            color: black;
+        }
+
+        p {
+            
+            font-weight: bolder;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>PASSE O MOUSE NOS ESPAÇOS EM BRANCO</h1>
+    <!--
+        Hierarquia de Tabelas Simples:
+        1° Table = Tabela
+            2° Table Rows = Linha de Tabela
+                3° Table Header = cabeçalho de tabela
+                    4° Table Data = dado de tabela
+    -->
+    <section id="container">
+        <article id="conteudo">
+            <table>
+                <tr> <!--1° linha-->
+                    <td class="dado1">A1</td>
+                    <td>B1</td>
+                    <td>C1</td>
+                </tr>
+                <tr> <!--2° linha-->
+                    <td>A2</td>
+                    <td class="dado2">B2</td>
+                    <td>C2</td>
+                </tr>
+                <tr> <!--3° linha-->
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td class="dado3">C3</td>
+                </tr>
+                <tr> <!--4° linha-->
+                    <td>A4</td>
+                    <td class="dado4">B4</td>
+                    <td>C4</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+</body>
+</html>
