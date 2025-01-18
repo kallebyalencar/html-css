@@ -13,25 +13,40 @@
             width: 500px;
             border-collapse: collapse;
             background-color: rgba(211, 211, 211, 0.411);
+            position: relative;
+        }
+
+        caption {
+            background-color: lightgray;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 7px;
         }
 
         thead, tfoot {
-            background-color: darkgray;
+            background-color: #747474;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #747474;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: rgba(255, 0, 0, 0.425);
+            color: white;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: lightgray;
         }
 
         td, th {
             border: 1px solid black;
             padding: 7px;
-        }
-
-        td:hover {
-           color: rgb(0, 116, 0);
-           font-weight: bold;
-        }
-
-        th:hover {
-            color: darkred;
         }
 
         .num {
@@ -41,12 +56,15 @@
     </style>
 </head>
 <body>
-    <h1> Unidades Federativas do Brasil </h1>
+
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -162,11 +180,13 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>212.583.750</strong></td>
             </tr>
         </tfoot>
-
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis et, officiis repellat dolores nulla placeat dolor ipsa tenetur dolore explicabo animi nihil reprehenderit, aliquam harum, unde accusamus sequi voluptatibus. Fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sunt deserunt consectetur, possimus temporibus odio doloribus itaque explicabo error molestiae debitis quibusdam ea aliquam neque, repellendus quaerat ratione ullam pariatur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aperiam adipisci eius, maxime sed quaerat laborum ex asperiores voluptatibus quibusdam architecto. Nesciunt natus odit vitae, quidem sint culpa officiis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis debitis ea dolor autem similique, doloremque reiciendis itaque a deleniti maxime fugit facere accusantium minus temporibus beatae omnis ex quaerat. Dicta?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis et, officiis repellat dolores nulla placeat dolor ipsa tenetur dolore explicabo animi nihil reprehenderit, aliquam harum, unde accusamus sequi voluptatibus. Fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sunt deserunt consectetur, possimus temporibus odio doloribus itaque explicabo error molestiae debitis quibusdam ea aliquam neque, repellendus quaerat ratione ullam pariatur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aperiam adipisci eius, maxime sed quaerat laborum ex asperiores voluptatibus quibusdam architecto. Nesciunt natus odit vitae, quidem sint culpa officiis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis debitis ea dolor autem similique, doloremque reiciendis itaque a deleniti maxime fugit facere accusantium minus temporibus beatae omnis ex quaerat. Dicta?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis et, officiis repellat dolores nulla placeat dolor ipsa tenetur dolore explicabo animi nihil reprehenderit, aliquam harum, unde accusamus sequi voluptatibus. Fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sunt deserunt consectetur, possimus temporibus odio doloribus itaque explicabo error molestiae debitis quibusdam ea aliquam neque, repellendus quaerat ratione ullam pariatur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aperiam adipisci eius, maxime sed quaerat laborum ex asperiores voluptatibus quibusdam architecto. Nesciunt natus odit vitae, quidem sint culpa officiis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis debitis ea dolor autem similique, doloremque reiciendis itaque a deleniti maxime fugit facere accusantium minus temporibus beatae omnis ex quaerat. Dicta?</p>
 </body>
 </html>
