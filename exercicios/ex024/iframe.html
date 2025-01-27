@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Estudos de iframe</title>
+    <style>
+        iframe {
+            height: 500px;
+            width: 500px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Testando o uso de iframe</h1>
+    <p>
+        Acessando o site do 
+            
+        <iframe src="https://kallebyalencar.github.io/projeto-android/" frameborder="0" height="500" scolling="no">
+            <a href="https://kallebyalencar.github.io/projeto-android/" target="_blank"> Kalleby</a>
+        </iframe>
+    </p>
+     <!--Alguns Sites tem uma proteção contra iframes (Nesse caso foi o google)-->
+    <p>
+        O repositório do Guanabara
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" width="500">
+            <a href="https//gustavoguanabara.github.io" target="_blank" >No Github
+            </a>
+        </iframe> 
+        também é bem legal!
+    </p>
 </body>
 </html>
