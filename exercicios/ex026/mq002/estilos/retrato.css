@@ -1,3 +1,13 @@
 @charset "UTF-8";
 
-/* Aparelho em pé */
+/* Aparelho em Pé */
+
+body {
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+h1 {
+    text-align: left;
+}
