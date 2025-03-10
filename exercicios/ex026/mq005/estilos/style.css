@@ -31,8 +31,6 @@ header h1 {
 }
 
 #burguer:hover {
-    background-color: white;
-    border-top-right-radius: 7px;
     color: black;
 }
 
@@ -46,7 +44,6 @@ menu ul {
 }
 
 menu a {
-    width: 300px;
     display: block;
     padding: 10px;
     text-decoration: none;
