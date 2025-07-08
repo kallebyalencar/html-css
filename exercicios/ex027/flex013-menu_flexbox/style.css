@@ -26,16 +26,17 @@ header {
 }
 
 header > h1 {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     flex: 0 0 200px; /* "XXX" não cresce nem sai do local */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.521);
 }
 
 header > nav {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: flex-end; /* ficar sempre no final */
 
 }
 
@@ -59,9 +60,10 @@ header > nav > a:hover{
 
 main {
     background-color: wheat;
-    margin: 10px;
+    width: 800px;
+    margin: 10px auto;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.422);
-}
 
+}
